@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UberPushkin</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/restorant.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="header__inner">
+          <a href="index.html" class="logo"
+            ><img src="img/logo.svg" alt="logo" class="logo__img" />
+          </a>
+          <div class="header__btn-inner">
+            <button class="header__btn">Войти</button>
+            <a href="#" class="header__basket"
+              ><img
+                src="img/basket.svg"
+                alt="basket"
+                class="header__basket-img"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+    <section class="viscard">
+      <div class="container-fluid">
+        <div class="viscard__pushk col-lg-5 col-md-7 col-sm-12">
+          <h1 class="viscard__title">Трактир «Пушкин»</h1>
+          <div class="viscard__inner-for-items">
+            <p class="viscard__price">₽₽₽ • Европейская</p>
+            <button class="viscard__btn">40 - 50 мин</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="main">
+      <div class="menu">
+        <div class="container-fluid">
+           <ul class="menu__list">
+             <li class="menu__type"><a href="#" class="menu__link menu__link-active">Закуски</a></li>
+             <li class="menu__type"><a href="#" class="menu__link">Салаты</a></li>
+             <li class="menu__type"><a href="#" class="menu__link">Супы</a></li>
+             <li class="menu__type"><a href="#" class="menu__link">Горячие блюда</a></li>
+             <li class="menu__type"><a href="#" class="menu__link">Гарниры</a></li>
+             <li class="menu__type"><a href="#" class="menu__link">Десерты</a></li>
+           </ul>
+         </div>
+      </div>
+      <section class="content">
+        <div class="container-fluid">
+          <h3 class="content__title">Закуски</h3>
+          <div class="row">
+            <div class="content__item col-lg-6 col-sm-12">
+              <a href="#" class="content__link">
+                <div class="content__inner">
+                  <h5 class="content__item-title">Сельдь на бородинском хлебе</h5><!-- как сделать, чтобы при наведении на карточку подчеркивался только титул, а не все и не только при наведении на непосредственно титул -->
+                  <p class="content__item-description">С яйцом и огурцом</p>
+                  <p class="content__item-price">240 ₽</p>
+                </div>
+                <img src="./img/item2-1.png" alt="" class="content__item-img">
+              </a>
+            </div>
+            <div class="content__item col-lg-6 col-sm-12">
+              <a href="#" class="content__link">
+                <div class="content__inner">
+                  <h5 class="content__item-title">Соленья ассорти</h5>
+                  <p class="content__item-price">320 ₽</p>
+                </div>
+                <img src="./img/item2-2.jpg" alt="" class="content__item-img">
+              </a>
+            </div>
+            <div class="content__item col-lg-6 col-sm-12">
+              <a href="#" class="content__link">
+                <div class="content__inner">
+                  <h5 class="content__item-title">Грибы маринованные</h5>
+                  <p class="content__item-price">300 ₽</p>
+                </div>
+                <img src="./img/item2-3.jpg" alt="" class="content__item-img">
+              </a>
+            </div>
+            <div class="content__item col-lg-6 col-sm-12">
+              <a href="#" class="content__link">
+                <div class="content__inner">
+                  <h5 class="content__item-title">Сало домашнее с горчицей</h5>
+                  <p class="content__item-price">320 ₽</p>
+                </div>
+                <img src="./img/item2-4.jpg" alt="" class="content__item-img">
+              </a>
+            </div>
+            <div class="content__item col-lg-6 col-sm-12">
+              <a href="#" class="content__link">
+                <div class="content__inner">
+                  <h5 class="content__item-title">Малосольная семга</h5>
+                  <p class="content__item-price">390 ₽</p>
+                </div>
+                <img src="./img/item2-5.jpg" alt="" class="content__item-img">
+              </a>
+            </div>
+            <div class="content__item col-lg-6 col-sm-12">
+              <a href="#" class="content__link">
+                <div class="content__inner">
+                  <h5 class="content__item-title">Язык говяжий с хреном</h5>
+                  <p class="content__item-price">350 ₽</p>
+                </div>
+                <img src="./img/item2-6.jpg" alt="" class="content__item-img">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main><!-- main -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="logo__box">
+          <a href="index.html" class="footer__logo">
+            <img src="img/white-logo.svg" alt="logo" class="footer__logo-img" />
+            </a>
+        </div>
+        <hr class="footer__line"><!-- почему нельзя ниж гр верхнего блока сделать на всю жирину просто? -->
+        <div class="contacts ">
+          <div class="row contacts__inner">
+            <div class="contacts__inner-1 col-lg-4 col-md-4 col-sm-4 col-xs-7">
+              <form class="contacts__form" name="lang-form" action="language" method="get"><!-- act/meth? -->
+                   <select class="contacts__lang" name="lang" form="lang-form">
+                    <option value="Русский">Русский</option>
+                    <option value="English">English</option>
+                   </select>
+              </form>
+              <div class="social">
+                <a class="social__link" href="/финалочка/index.html">
+                  <img class="social__hash" src="./img/hash.svg" alt=""> 
+                  <img src="./img/UberEats_soc.svg" alt="">
+                </a>
+                <div class="social__icons">
+                  <a class="social__icon" href="#"><img class="social__icon-img" src="./img/fb.svg" alt=""></a>
+                  <a class="social__icon" href="#"><img class="social__icon-img" src="./img/twitter.svg" alt=""></a>
+                  <a class="social__icon"href="#"><img class="social__icon-img" src="./img/inst.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="partners col-lg-4 col-md-4 col-sm-4 col-xs-7">
+              <div class="contacts__link"><a  href="#">Об UberEats</a></div>
+              <div class="contacts__link"><a  href="#">Станьте партнёром по доставке</a></div>
+              <div class="contacts__link"><a href="#">Станьте парнёром-рестораном</a></div>
+            </div>
+            <div class="info col-lg-4 col-md-4 col-sm-4 col-xs-7">
+                <div class="contacts__link"><a  href="#">Все города</a></div>
+                <div class="contacts__link"><a  href="#">Цены</a></div>
+                <div class="contacts__link"><a  href="#">Помощь</a></div>
+                <div class="contacts__last-link"><a  href="#">FAQs</a></div>
+          </div>
+        </div>
+        <hr class="footer__line"><!-- почему нельзя ниж гр верхнего блока сделать на всю жирину просто? -->
+        <div class="app">
+          <a class="app__link" href="#"><img src="./img/appstore.png" alt=""></a>
+          <a class="app__link" href="#"><img src="./img/playmarket.png" alt=""></a>
+        </div>
+        <hr class="footer__line"><!-- почему нельзя ниж гр верхнего блока сделать на всю жирину просто? -->
+        <div class="end">
+          <div class="row">
+            <p class="end__link col-lg-4 col-md-4 col-sm-4 col-xs-12" href="#">© 2017 Uber Technologies Inc.</p>
+            <div class="end__link col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="#">Обработка персональных данных</a>
+            </div>
+            <div class="end__link col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+              <a href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="home-btn" href="#"><!-- а баттоном можно? -->
+      <img class="home__img" src="./img/arrow_home.svg" alt="">
+    </a>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+/* а вот как правильно:  для каждой страницы свой полноценный css файл создавать или подключать предыдущий и новый, в котором то кдля него стили? */
+
+/* viscard */
+
+.viscard {
+  margin-top: 78px;
+  background-image: url(../img/bg-card.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.viscard__pushk {
+  padding: 38px 52px 34px 48px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+
+.viscard__title {
+  margin: 0 0 54px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #1d1d1d;
+}
+
+.viscard__inner-for-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.viscard__price {
+  line-height: 16px;
+  color: #626262;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.viscard__btn {
+  background: #262626;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+}
+
+.viscard__btn:hover {
+  background: #1d1d1d;
+  outline: 1px solid #2e2e2eaf;
+  transition: all 0.1s linear;
+}
+
+.viscard__btn:active {
+  background: #444444;
+  outline: none;
+}
+
+/* menu */
+
+.menu {
+  padding: 32px 0 29px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+.menu__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.menu__type {
+  list-style-type: none;
+}
+
+.menu__link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+
+.menu__link-active {
+  color: #327430;
+}
+
+/* content */
+
+.content__title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #1d1d1d;
+  margin-bottom: 32px;
+}
+
+.content__item {
+  margin-bottom: 49px;
+}
+
+.content__item:last-child {
+  margin-bottom: 80px;
+}
+
+.content__link {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+.content__link:hover {
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: rgba(117, 117, 117, 0.04);
+}
+
+.content__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  justify-content: space-between;
+}
+
+.content__item-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin: 16px 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.content__link:hover .content__item-title {
+  text-decoration: underline;
+  text-decoration-color: #1d1d1d;
+}
+.content__item-description {
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+  margin-bottom: auto;
+}
+
+.content__item-price {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #1d1d1d;
+  margin-bottom: 15px;
+}
+
+.content__item-img {
+  overflow: hidden;
+  max-width: 102px;
+}
+
+@media (max-width: 991.9px) {
+  .content__title {
+    margin-top: 56px;
+  }
+
+  .content__inner {
+    padding-left: 24px;
+  }
+
+  .content__item {
+    margin-bottom: 32px;
+  }
+
+  .content__item:last-child {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .viscard {
+    position: relative;
+    height: 255px;
+  }
+
+  .viscard__pushk {
+    position: absolute;
+    width: calc(100% - 16px);
+    left: 8px;
+    bottom: -56px;
+    padding: 24px 8px;
+  }
+
+  .viscard__inner-for-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .viscard__title {
+    margin-bottom: 40px;
+  }
+
+  .menu {
+    display: none;
+  }
+  .content__title {
+    margin: 112px auto 56px;
+    text-align: center;
+    position: relative;
+  }
+
+  .content__title:after {
+    content: "";
+    background-image: url(../img/line-mobile.svg);
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: -12px;
+    height: 1px;
+    width: 50px;
+    /* transform: translate(50%, 50%); */
+  }
+
+  .content__inner {
+    padding-left: 0;
+  }
+
+  .content__item {
+    margin-bottom: 16px;
+  }
+
+  .content__link {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  }
+
+  .content__item:last-child {
+    margin-bottom: 40px;
+  }
+
+  .content__link:hover {
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  }
+
+  .content__item-title {
+    font-size: 14px;
+    margin: 0 0 4px;
+  }
+}

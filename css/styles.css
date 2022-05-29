@@ -1,0 +1,335 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #1d1d1d;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+  box-sizing: content-box;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease-in; /* не робит на подчеркивании? */
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  max-width: 956px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* header */
+.header {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  background: #ffffff;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.header__btn-inner {
+  display: flex;
+  gap: 27px;
+}
+
+.logo {
+  margin: 27px 0;
+}
+
+.header__btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 7px 20px;
+  margin: 16px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.header__btn:hover {
+  background: rgba(117, 117, 117, 0.1);
+  color: #1d1d1d;
+}
+.header__btn:active {
+  background: rgba(117, 117, 117, 0.3);
+  color: #1d1d1d;
+  outline: 2px solid rgba(224, 224, 224, 1.3);
+}
+
+.header__basket {
+  margin: 25px 8px 25px 0;
+}
+
+/* search */
+.search {
+  margin: 134px 0 57px;
+}
+
+.search__line {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  color: #626262;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border: 0px solid;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+  mix-blend-mode: normal;
+  outline: none;
+}
+
+/* rests */
+
+.rests {
+  margin-bottom: 64px;
+}
+
+.rests__title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  margin: 0 0 16px;
+}
+
+.rests__item:hover {
+  background: rgba(117, 117, 117, 0.04);
+}
+
+.rests__img {
+  width: 100%;
+  object-fit: cover;
+  margin: 0 0 16px;
+}
+
+.rests__img:hover {
+  text-decoration: none;
+}
+
+.rests__name {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 4px;
+  color: rgba(29, 29, 29, 1);
+}
+
+.rests__price {
+  font-size: 14px;
+  color: #626262;
+  margin: 0 0 4px;
+}
+
+.rests__time {
+  font-size: 13px;
+  margin: 0 0 36px;
+  color: rgba(29, 29, 29, 1);
+}
+
+/* footer */
+.footer {
+  background: #262626;
+  padding-top: 56px;
+}
+
+/* Footer__logo */
+.footer__line {
+  margin: 0 0 32px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  outline: none;
+}
+
+.logo__box {
+  margin-bottom: 40px;
+}
+
+.contacts__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__inner-1 {
+  margin-bottom: 39px;
+}
+
+.contacts__form {
+  position: relative;
+  width: 75%; /* тут ок так делать? а от растягивается на всю ширину */
+}
+.contacts__lang {
+  background-color: #3b3b3b;
+  border-radius: 2px;
+  font-size: 13px;
+  line-height: 15px;
+  width: 100%;
+  color: #ffffff;
+  padding: 12px 0 12px 48px;
+  margin-bottom: 33px;
+  border: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.contacts__form:before {
+  content: "";
+  background-image: url(../img/world.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  z-index: 3;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.contacts__form:after {
+  content: "";
+  background-image: url(../img/arrow-back.svg);
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  right: 8px; /* почему шиворот-на-выворот? */
+  top: 16px;
+  cursor: pointer;
+  pointer-events: none;
+} /* А как сделать так, чтобы только на стрелочку можно было бы активировать кнопку, а в остальные места, чтобы не робило? */
+
+.social__link {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 18px;
+}
+
+.social__icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social__icon {
+  width: 24px;
+  height: 24px;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon-img {
+  /* почему обджект-фит не робит? неужели только флексы? */
+  object-fit: cover;
+}
+.social__icon:hover {
+  border: 2px solid #979797;
+  transition: all 0.3s linear;
+}
+
+/* center */
+
+.partners {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.contacts__link,
+.contacts__link a,
+.contacts__last-link,
+.contacts__last-link a {
+  /* как тут ласт чайлд работает, он выше ок, а тут не работал, странно */
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+
+.contacts__last-link {
+  margin-bottom: 0;
+}
+
+/* app */
+
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 9px;
+  margin-bottom: 39px;
+}
+
+/* end */
+
+.end {
+  padding-bottom: 16px;
+}
+
+.end__link,
+.end__link a {
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
+
+/* home-btn */
+
+.home-btn {
+  width: 80px;
+  height: 80px;
+  background: #59bd5a;
+  border-radius: 2px;
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* как это делать по-человечески? Стрелку по центру */
+}
+
+@media (max-width: 576px) {
+  .contacts__link:last-child {
+    margin-bottom: 23px;
+  }
+  .app {
+    margin: -8px 0 22px;
+    padding: 0;
+  }
+  .home-btn {
+    width: 64px;
+    height: 64px;
+  }
+}
